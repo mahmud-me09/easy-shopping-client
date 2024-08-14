@@ -3,10 +3,13 @@ import { createRoot } from 'react-dom/client'
 
 import './index.css'
 import Routes from './routes/Routes.jsx';
+import AuthProvider from './providers/AuthProvider.jsx';
 
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<Routes></Routes>
+		<AuthProvider>
+			<Routes></Routes>
+		</AuthProvider>
 	</StrictMode>
 );

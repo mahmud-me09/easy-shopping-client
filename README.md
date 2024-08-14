@@ -1,8 +1,17 @@
-# React + Vite
+# Easy Shopping Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website allows users to search and view desired products.
 
-Currently, two official plugins are available:
+Users can enjoy the following features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search the products
+- 
+
+The website is live at: 
+
+If you want to set up the website locally. The following steps should be followed:
+
+- clone from Github using the following command:
+    git clone https://github.com/mahmud-me09/easy-shopping-client.git
+- run the following command:
+    npm i
