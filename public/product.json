@@ -1,0 +1,362 @@
+[
+	{
+		"name": "Nissan GT-R",
+		"price": "$115,000",
+		"category": "Coupe",
+		"description": "A high-performance coupe known for its advanced technology and powerful twin-turbo engine.",
+		"rating": 5,
+		"image": "https://example.com/images/nissan_gtr.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Ferrari F8 Tributo",
+		"price": "$276,000",
+		"category": "Sportscar",
+		"description": "A luxury sportscar with a twin-turbo V8 engine and stunning design.",
+		"rating": 5,
+		"image": "https://example.com/images/ferrari_f8_tributo.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Tesla Model X",
+		"price": "$99,000",
+		"category": "SUV",
+		"description": "An all-electric luxury SUV with falcon-wing doors and advanced autopilot features.",
+		"rating": 5,
+		"image": "https://example.com/images/tesla_model_x.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Maserati GranTurismo Convertible",
+		"price": "$150,000",
+		"category": "Convertible",
+		"description": "A luxury convertible with a blend of Italian design and exhilarating performance.",
+		"rating": 4,
+		"image": "https://example.com/images/maserati_granturismo_convertible.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Mercedes-Benz E-Class",
+		"price": "$68,000",
+		"category": "Sedan",
+		"description": "A luxury sedan offering a comfortable ride, advanced safety features, and a premium interior.",
+		"rating": 5,
+		"image": "https://example.com/images/mercedes_e_class.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Volvo XC60",
+		"price": "$60,000",
+		"category": "Crossover",
+		"description": "A luxury crossover known for its Scandinavian design, safety features, and comfortable interior.",
+		"rating": 4,
+		"image": "https://example.com/images/volvo_xc60.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Mercedes-Benz A-Class",
+		"price": "$35,000",
+		"category": "Hatchback",
+		"description": "A compact luxury hatchback with advanced technology and a premium interior.",
+		"rating": 3,
+		"image": "https://example.com/images/mercedes_a_class.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "BMW Z4",
+		"price": "$65,000",
+		"category": "Roadster",
+		"description": "A luxury roadster with a sporty design, powerful engines, and dynamic handling.",
+		"rating": 4,
+		"image": "https://example.com/images/bmw_z4.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "McLaren GT",
+		"price": "$210,000",
+		"category": "Grand Tourer (GT)",
+		"description": "A grand tourer with a lightweight design, powerful performance, and a luxurious cabin.",
+		"rating": 5,
+		"image": "https://example.com/images/mclaren_gt.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Bentley Bentayga Speed",
+		"price": "$245,000",
+		"category": "Luxury SUV",
+		"description": "A high-performance luxury SUV with a powerful W12 engine and an opulent interior.",
+		"rating": 5,
+		"image": "https://example.com/images/bentley_bentayga_speed.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Jaguar F-Type",
+		"price": "$74,000",
+		"category": "Coupe",
+		"description": "A luxury coupe with a stunning design and a choice of powerful engines.",
+		"rating": 4,
+		"image": "https://example.com/images/jaguar_ftype.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Lamborghini Aventador",
+		"price": "$421,000",
+		"category": "Sportscar",
+		"description": "A supercar with a V12 engine, advanced aerodynamics, and a breathtaking design.",
+		"rating": 5,
+		"image": "https://example.com/images/lamborghini_aventador.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Porsche Cayenne",
+		"price": "$89,000",
+		"category": "SUV",
+		"description": "A luxury SUV that offers sporty handling, a comfortable ride, and a premium interior.",
+		"rating": 5,
+		"image": "https://example.com/images/porsche_cayenne.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "BMW 8 Series Convertible",
+		"price": "$130,000",
+		"category": "Convertible",
+		"description": "A luxury convertible with a powerful engine, elegant design, and advanced technology.",
+		"rating": 4,
+		"image": "https://example.com/images/bmw_8_series_convertible.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Genesis G90",
+		"price": "$75,000",
+		"category": "Sedan",
+		"description": "A luxury sedan offering a smooth ride, spacious interior, and advanced features at a competitive price.",
+		"rating": 4,
+		"image": "https://example.com/images/genesis_g90.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Mercedes-Benz GLC",
+		"price": "$55,000",
+		"category": "Crossover",
+		"description": "A luxury crossover with a refined interior, strong performance, and advanced safety features.",
+		"rating": 4,
+		"image": "https://example.com/images/mercedes_glc.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Porsche Panamera",
+		"price": "$92,000",
+		"category": "Hatchback",
+		"description": "A luxury hatchback with a sporty character, powerful engines, and a luxurious cabin.",
+		"rating": 5,
+		"image": "https://example.com/images/porsche_panamera.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Aston Martin V12 Speedster",
+		"price": "$950,000",
+		"category": "Roadster",
+		"description": "A luxury roadster with a V12 engine and a unique, open-top design.",
+		"rating": 5,
+		"image": "https://example.com/images/aston_martin_v12_speedster.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Ferrari Roma",
+		"price": "$222,000",
+		"category": "Grand Tourer (GT)",
+		"description": "A grand tourer with a turbocharged V8 engine and a sleek, modern design.",
+		"rating": 5,
+		"image": "https://example.com/images/ferrari_roma.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Rolls-Royce Cullinan Black Badge",
+		"price": "$382,000",
+		"category": "Luxury SUV",
+		"description": "A high-performance luxury SUV with a bold design, opulent interior, and a powerful V12 engine.",
+		"rating": 5,
+		"image": "https://example.com/images/rolls_royce_cullinan_black_badge.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Audi S5 Coupe",
+		"price": "$55,000",
+		"category": "Coupe",
+		"description": "A sporty luxury coupe with a turbocharged V6 engine and a refined interior.",
+		"rating": 4,
+		"image": "https://example.com/images/audi_s5_coupe.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Chevrolet Corvette",
+		"price": "$70,000",
+		"category": "Sportscar",
+		"description": "An American classic sportscar with a mid-engine design and impressive performance.",
+		"rating": 5,
+		"image": "https://example.com/images/chevrolet_corvette.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Range Rover Velar",
+		"price": "$75,000",
+		"category": "SUV",
+		"description": "A luxury SUV with a sleek design, refined interior, and advanced technology.",
+		"rating": 5,
+		"image": "https://example.com/images/range_rover_velar.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Aston Martin DB11 Volante",
+		"price": "$220,000",
+		"category": "Convertible",
+		"description": "A luxury convertible with a V8 engine, sophisticated design, and a premium cabin.",
+		"rating": 5,
+		"image": "https://example.com/images/aston_martin_db11_volante.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Lexus LS",
+		"price": "$81,000",
+		"category": "Sedan",
+		"description": "A luxury sedan offering a smooth ride, quiet cabin, and advanced technology.",
+		"rating": 5,
+		"image": "https://example.com/images/lexus_ls.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "BMW X4",
+		"price": "$61,000",
+		"category": "Crossover",
+		"description": "A luxury crossover with coupe-like styling, strong performance, and a refined interior.",
+		"rating": 4,
+		"image": "https://example.com/images/bmw_x4.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Audi A7 Sportback",
+		"price": "$70,000",
+		"category": "Hatchback",
+		"description": "A luxury hatchback with a coupe-like design, powerful engines, and a premium interior.",
+		"rating": 4,
+		"image": "https://example.com/images/audi_a7_sportback.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Mercedes-Benz SL-Class",
+		"price": "$91,000",
+		"category": "Roadster",
+		"description": "A luxury roadster with a powerful engine, elegant design, and advanced technology.",
+		"rating": 5,
+		"image": "https://example.com/images/mercedes_sl_class.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Ferrari Portofino",
+		"price": "$215,000",
+		"category": "Grand Tourer (GT)",
+		"description": "A grand tourer with a retractable hardtop, turbocharged V8 engine, and a luxurious cabin.",
+		"rating": 5,
+		"image": "https://example.com/images/ferrari_portofino.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Bentley Bentayga",
+		"price": "$177,000",
+		"category": "Luxury SUV",
+		"description": "A luxury SUV offering a combination of luxury, performance, and advanced technology.",
+		"rating": 5,
+		"image": "https://example.com/images/bentley_bentayga.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Ford Mustang GT",
+		"price": "$45,000",
+		"category": "Coupe",
+		"description": "A legendary American muscle car with a powerful V8 engine and classic styling.",
+		"rating": 4,
+		"image": "https://example.com/images/ford_mustang_gt.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Porsche 911 Turbo S",
+		"price": "$207,000",
+		"category": "Sportscar",
+		"description": "A high-performance sportscar with a turbocharged engine and a luxurious interior.",
+		"rating": 5,
+		"image": "https://example.com/images/porsche_911_turbo_s.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "BMW X7",
+		"price": "$75,000",
+		"category": "SUV",
+		"description": "A luxury SUV offering three rows of seating, strong performance, and a premium interior.",
+		"rating": 5,
+		"image": "https://example.com/images/bmw_x7.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Ferrari California T",
+		"price": "$198,000",
+		"category": "Convertible",
+		"description": "A luxury convertible with a retractable hardtop, turbocharged V8 engine, and a stylish design.",
+		"rating": 5,
+		"image": "https://example.com/images/ferrari_california_t.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Audi A8",
+		"price": "$87,000",
+		"category": "Sedan",
+		"description": "A luxury sedan with a spacious interior, advanced technology, and a refined design.",
+		"rating": 5,
+		"image": "https://example.com/images/audi_a8.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Infiniti QX50",
+		"price": "$46,000",
+		"category": "Crossover",
+		"description": "A luxury crossover with a modern design, advanced features, and a comfortable interior.",
+		"rating": 4,
+		"image": "https://example.com/images/infiniti_qx50.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Volkswagen Arteon",
+		"price": "$47,000",
+		"category": "Hatchback",
+		"description": "A luxury hatchback with a sleek design, advanced technology, and a spacious interior.",
+		"rating": 4,
+		"image": "https://example.com/images/vw_arteon.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Jaguar F-Type Convertible",
+		"price": "$74,000",
+		"category": "Roadster",
+		"description": "A luxury roadster with a stunning design, powerful engines, and a thrilling driving experience.",
+		"rating": 5,
+		"image": "https://example.com/images/jaguar_ftype_convertible.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Aston Martin DBS Superleggera",
+		"price": "$316,000",
+		"category": "Grand Tourer (GT)",
+		"description": "A grand tourer with a twin-turbo V12 engine, striking design, and luxurious cabin.",
+		"rating": 5,
+		"image": "https://example.com/images/aston_martin_dbs_superleggera.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	},
+	{
+		"name": "Rolls-Royce Ghost",
+		"price": "$315,000",
+		"category": "Luxury SUV",
+		"description": "A luxury SUV with a powerful V12 engine, opulent interior, and advanced technology.",
+		"rating": 5,
+		"image": "https://example.com/images/rolls_royce_ghost.jpg",
+		"createdAt": "2024-08-15T18:57:32.370Z"
+	}
+]

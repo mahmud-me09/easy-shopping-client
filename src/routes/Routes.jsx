@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "../pages/ErrorPage";
 import App from "../App";
 import AddProductPage from "../pages/addProductPage/AddProductPage";
+import ProductPage from "../pages/productPage/ProductPage";
 
 const Routes = () => {
 
@@ -18,6 +19,10 @@ const Routes = () => {
 				{
 					path: "/addproduct",
 					element: <AddProductPage></AddProductPage>,
+				},
+				{
+					path: "/products",
+					element: <ProductPage></ProductPage>,
 				},
 			],
 		},
