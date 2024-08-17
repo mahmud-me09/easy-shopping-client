@@ -6,7 +6,7 @@ import { FaSearch } from "react-icons/fa";
 
 const ProductPage = () => {
 	const [currentPage, setCurrentPage] = useState(0);
-	const [price, setPrice] = useState(300);
+	const [price, setPrice] = useState(parseInt(localStorage.getItem("price")) || 1200);
 	const [category, setCategory] = useState(
 		localStorage.getItem("category") || ""
 	);
@@ -121,10 +121,10 @@ const ProductPage = () => {
 						<input
 							type="range"
 							min={0}
-							max="1200"
+							max={1200}
 							value={price}
 							className="range"
-							step="300"
+							step={300}
 							onChange={(event) => {
 								setPrice(event.target.value);
 								localStorage.setItem(
