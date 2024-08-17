@@ -7,7 +7,7 @@ Users can enjoy the following features:
 - Search the products
 - 
 
-The website is live at: 
+The website is live at: https://easy-shopping-website-1b109.web.app
 
 If you want to set up the website locally. The following steps should be followed:
 
