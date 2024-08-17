@@ -15,18 +15,17 @@
 ### If you want to set up the website locally. The following steps should be followed:
 
 - clone from Github using the following command:
-    git clone https://github.com/mahmud-me09/easy-shopping-client.git
+    <code>git clone https://github.com/mahmud-me09/easy-shopping-client.git</code>
 - create an app in the firebase authentication and copy the API of imgbb. 
 - create a .env file
-<code>
-    VITE_Firebase_apiKey=Your firebase_api_key
+<code>VITE_Firebase_apiKey=Your firebase_api_key
     VITE_Firebase_authDomain=Your_firebase_authDomain
     VITE_Firebase_projectId=Your_firebase_authDomain
     VITE_Firebase_storageBucket=Your_firebase_authDomain
     VITE_Firebase_messagingSenderId=Your_firebase_authDomain
     VITE_Firebase_appId=Your_firebase_authDomain
-    VITE_IMGBB_API=Your_imgbb_API
-</code>
+    VITE_IMGBB_API=Your_imgbb_API</code>
+
 
 - run the following command:
     <code>npm i</code>
