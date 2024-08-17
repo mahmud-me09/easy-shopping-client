@@ -27,7 +27,9 @@
     VITE_Firebase_appId=Your_firebase_authDomain
     VITE_IMGBB_API=Your_imgbb_API
 </code>
+
 - run the following command:
     <code>npm i</code>
+
 - run the app locally using the following command:
     <code>npm run dev</code>
