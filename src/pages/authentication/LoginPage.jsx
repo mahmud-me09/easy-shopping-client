@@ -19,7 +19,6 @@ const LoginPage = () => {
 			.then((result) => {
 				// const token = credential.accessToken;
 				const user = result.user;
-				
 				setIsLoading(false);
 				Swal.fire({
 					position: "top-end",
@@ -28,7 +27,7 @@ const LoginPage = () => {
 					showConfirmButton: false,
 					timer: 1500,
 				});
-                navigate("/products")
+                navigate("/")
 			})
 			.catch((error) => {
 				const errorCode = error.code;
@@ -43,7 +42,7 @@ const LoginPage = () => {
 			});
 	};
 
-	const handleSignIn = (e) => {
+	const handleSignIn = async (e) => {
 		e.preventDefault();
 		const form = e.target;
 		const email = form.email.value;
@@ -57,7 +56,9 @@ const LoginPage = () => {
 					showConfirmButton: false,
 					timer: 1500,
 				});
+                navigate('/')
 			})
+
 			.catch((error) => {
 				Swal.fire({
 					icon: "error",
@@ -81,7 +82,7 @@ const LoginPage = () => {
 					<p className="text-sm text-center dark:text-gray-600">
 						Dont have account?
 						<Link
-							to="/register"
+							to="/registration"
 							className="focus:underline hover:underline"
 						>
 							Sign up here

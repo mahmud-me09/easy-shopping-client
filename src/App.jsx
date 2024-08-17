@@ -1,14 +1,16 @@
-import { Outlet } from 'react-router-dom'
-import './App.css'
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
-
-  return (
-    <div className='max-w-6xl mx-auto p-5'>
-    <p className='text-center w-full bg-amber-500 p-5'>This is Navbar</p>
-      <Outlet></Outlet>
-    </div>
-  )
+	return (
+		<div className="max-w-6xl mx-auto p-5">
+			<Navbar></Navbar>
+			<Outlet></Outlet>
+			<Footer></Footer>
+		</div>
+	);
 }
 
-export default App
+export default App;
