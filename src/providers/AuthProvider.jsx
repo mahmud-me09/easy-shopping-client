@@ -2,9 +2,10 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndP
 import {auth} from "../utilities/Firebase";
 import { createContext, useEffect, useState } from "react";
 import { GoogleAuthProvider } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
-const provider = new GoogleAuthProvider();
 export const AuthContext = createContext(null);
+const googleProvider = new GoogleAuthProvider();
 
 
 const AuthProvider = ({children}) => {
@@ -13,6 +14,7 @@ const AuthProvider = ({children}) => {
 		return savedUser ? JSON.parse(savedUser) : null;
 	});
 	const [isLoading, setIsLoading] = useState(true);
+	const navigate = useNavigate()
 
 	const createUser = (email, password) => {
 		return createUserWithEmailAndPassword(auth, email, password)
@@ -47,29 +49,10 @@ const AuthProvider = ({children}) => {
 		return signInWithEmailAndPassword(auth, email, password);
 	};
 
-    const googleSignIn = async (auth) => {
-		return await signInWithPopup(auth, provider)
-			.then((result) => {
-				// This gives you a Google Access Token. You can use it to access the Google API.
-				const credential =
-					GoogleAuthProvider.credentialFromResult(result);
-				const token = credential.accessToken;
-				// The signed-in user info.
-				const user = result.user;
-				// IdP data available using getAdditionalUserInfo(result)
-				// ...
-			})
-			.catch((error) => {
-				// Handle Errors here.
-				const errorCode = error.code;
-				const errorMessage = error.message;
-				// The email of the user's account used.
-				const email = error.customData.email;
-				// The AuthCredential type that was used.
-				const credential =
-					GoogleAuthProvider.credentialFromError(error);
-				// ...
-			});
+    
+	const googleSignIn = () => {
+		setIsLoading(true);
+		return signInWithPopup(auth, googleProvider);
 	};
 
     const handleSignOut = async () => {
@@ -98,6 +81,7 @@ const AuthProvider = ({children}) => {
 				// User is signed in, see docs for a list of available properties
 				// https://firebase.google.com/docs/reference/js/auth.user
 				const uid = user.uid;
+				navigate("/products");
 				// ...
 			} else {
                 setIsLoading(true);
@@ -113,6 +97,7 @@ const AuthProvider = ({children}) => {
     },[])
 
     const authInfo = {
+		setIsLoading,
 		isLoading,
 		setIsLoading,
 		signInUser,

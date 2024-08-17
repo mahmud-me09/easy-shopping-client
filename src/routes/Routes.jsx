@@ -3,6 +3,7 @@ import ErrorPage from "../pages/ErrorPage";
 import App from "../App";
 import AddProductPage from "../pages/addProductPage/AddProductPage";
 import ProductPage from "../pages/productPage/ProductPage";
+import LoginPage from "../pages/authentication/LoginPage";
 
 const Routes = () => {
 
@@ -13,8 +14,8 @@ const Routes = () => {
 			errorElement: <ErrorPage></ErrorPage>,
 			children: [
 				{
-					path: "/home",
-					element: <div>THis is home route.</div>,
+					path: "",
+					element: <LoginPage></LoginPage>,
 				},
 				{
 					path: "/addproduct",
