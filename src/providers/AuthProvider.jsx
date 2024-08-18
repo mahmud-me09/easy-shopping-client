@@ -18,7 +18,6 @@ const AuthProvider = ({ children }) => {
 		const savedUser = localStorage.getItem("authUser");
 		return savedUser ? JSON.parse(savedUser) : null;
 	});
-	const [isLoading, setIsLoading] = useState(true);
 
 	const createUser = (email, password) => {
 		return createUserWithEmailAndPassword(auth, email, password);
@@ -30,13 +29,10 @@ const AuthProvider = ({ children }) => {
 	};
 
 	const googleSignIn = () => {
-		setIsLoading(true);
 		return signInWithPopup(auth, googleProvider);
 	};
 
 	const handleSignOut = async () => {
-		setIsLoading(true);
-
 		await signOut(auth)
 			.then(() => {
 				Swal.fire({
@@ -49,7 +45,6 @@ const AuthProvider = ({ children }) => {
 
 				localStorage.removeItem("authUser");
 				setUser(null);
-				setIsLoading(false);
 			})
 			.catch((error) => {
 				console.error("Failed to sign out", error);
@@ -58,7 +53,6 @@ const AuthProvider = ({ children }) => {
 					title: "Oops...",
 					text: "Failed to Sign Out",
 				});
-				setIsLoading(false);
 			});
 	};
 
@@ -66,18 +60,10 @@ const AuthProvider = ({ children }) => {
 		const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
 			if (currentUser) {
 				localStorage.setItem("authUser", JSON.stringify(currentUser));
-				setIsLoading(false);
 				setUser(currentUser);
-				// User is signed in, see docs for a list of available properties
-				// https://firebase.google.com/docs/reference/js/auth.user
-				const uid = user.uid;
-				// ...
 			} else {
-				setIsLoading(true);
 				setUser(null);
 				localStorage.removeItem("authUser");
-				// User is signed out
-				// ...
 			}
 			console.log("observing", currentUser);
 		});
@@ -86,8 +72,6 @@ const AuthProvider = ({ children }) => {
 
 	const authInfo = {
 		user,
-		setIsLoading,
-		isLoading,
 		signInUser,
 		handleSignOut,
 		createUser,

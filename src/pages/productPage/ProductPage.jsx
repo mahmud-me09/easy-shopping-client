@@ -43,7 +43,7 @@ const ProductPage = () => {
 	const numberOfPages = Math.ceil(count / itemsPerPage);
 	const pages = [...Array(numberOfPages).keys()];
 
-
+console.log(count)
 	const {
 		status,
 		data: products,

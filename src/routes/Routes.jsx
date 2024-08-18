@@ -5,6 +5,8 @@ import AddProductPage from "../pages/addProductPage/AddProductPage";
 import ProductPage from "../pages/productPage/ProductPage";
 import LoginPage from "../pages/authentication/LoginPage";
 import RegistrationPage from "../pages/authentication/RegistrationPage";
+import PublicRouter from "./PublicRouter";
+import PrivateRouter from "./PrivateRouter";
 
 const Routes = () => {
 
@@ -20,15 +22,15 @@ const Routes = () => {
 				},
 				{
 					path: "/login",
-					element: <LoginPage></LoginPage>,
+					element: <PublicRouter><LoginPage></LoginPage></PublicRouter>,
 				},
 				{
 					path: "/registration",
-					element: <RegistrationPage></RegistrationPage>,
+					element: <PublicRouter><RegistrationPage></RegistrationPage></PublicRouter>,
 				},
 				{
 					path: "/addproduct",
-					element: <AddProductPage></AddProductPage>,
+					element: <PrivateRouter><AddProductPage></AddProductPage></PrivateRouter>,
 				},
 			],
 		},

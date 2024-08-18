@@ -1,4 +1,4 @@
-import { Link, useNavigate} from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 import { useContext, useState } from "react";
 
 import Swal from "sweetalert2";
@@ -7,9 +7,12 @@ import {AuthContext} from "../../providers/AuthProvider";
 
 
 const LoginPage = () => {
-	const { googleSignIn, signInUser, setIsLoading } = useContext(AuthContext);
+	const { googleSignIn, signInUser } = useContext(AuthContext);
 	const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate()
+	const location = useLocation()
+
+	const from = location.state?.from?.pathname || '/'
 
 	const handleShowPassword = () => {
 		setShowPassword(!showPassword);
@@ -17,9 +20,7 @@ const LoginPage = () => {
 	const handleGoogleSignIn = () => {
 		googleSignIn()
 			.then((result) => {
-				// const token = credential.accessToken;
 				const user = result.user;
-				setIsLoading(false);
 				Swal.fire({
 					position: "top-end",
 					icon: "success",
@@ -27,11 +28,12 @@ const LoginPage = () => {
 					showConfirmButton: false,
 					timer: 1500,
 				});
-                navigate("/")
+                navigate(from,{replace: true})
 			})
 			.catch((error) => {
 				const errorCode = error.code;
 				const errorMessage = error.message;
+				
 				console.log(errorMessage, errorCode);
 				Swal.fire({
 					icon: "error",
@@ -56,7 +58,7 @@ const LoginPage = () => {
 					showConfirmButton: false,
 					timer: 1500,
 				});
-                navigate('/')
+                navigate(from,{replace: true})
 			})
 
 			.catch((error) => {

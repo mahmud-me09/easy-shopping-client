@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useMutation } from "@tanstack/react-query";
 import Swal from "sweetalert2";
@@ -7,7 +6,6 @@ import imgbbUpload from "../../hooks/imageHosting";
 const axiosPublic = useAxiosPublic();
 
 const AddProductPage = () => {
-	const [image, setImage] = useState("");
 
 	const mutation = useMutation({
 		mutationFn: async (data) => {
@@ -29,32 +27,6 @@ const AddProductPage = () => {
 		},
 	});
 
-	// const imgbbUpload = async (file) => {
-	// 	const apiKey = import.meta.env.VITE_IMGBB_API;
-
-	// 	const formData = new FormData();
-	// 	formData.append("image", file);
-
-	// 	try {
-	// 		const response = await fetch(
-	// 			"https://api.imgbb.com/1/upload?key=" + apiKey,
-	// 			{
-	// 				method: "POST",
-	// 				body: formData,
-	// 			}
-	// 		);
-
-	// 		if (!response.ok) {
-	// 			throw new Error(`Error: ${response.statusText}`);
-	// 		}
-
-	// 		const data = await response.json();
-	// 		return data;
-	// 	} catch (error) {
-	// 		console.error("Error uploading image:", error);
-	// 		throw error;
-	// 	}
-	// };
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
